@@ -265,10 +265,23 @@
   }
   .contact-panel h2{font-family:var(--display);font-size:clamp(28px,4vw,42px);font-weight:600;letter-spacing:-0.01em;}
   .contact-panel p{color:var(--muted);margin:16px auto 32px;max-width:460px;}
+  .contact-links{
+    display:flex;gap:16px;justify-content:center;flex-wrap:wrap;flex-direction:column;align-items:center;
+  }
   .contact-email{
     font-family:var(--mono);font-size:16px;color:var(--accent);
     border-bottom:1px solid var(--accent-dim);padding-bottom:2px;
+    transition:color .15s ease, border-color .15s ease;
   }
+  .contact-email:hover{color:#5D8EFF;border-color:#5D8EFF;}
+  .contact-telegram{
+    font-family:var(--mono);font-size:14px;
+    border:1px solid var(--border);color:var(--text);
+    padding:9px 16px;border-radius:6px;
+    transition:border-color .15s ease, background .15s ease;
+    display:inline-flex;align-items:center;gap:6px;
+  }
+  .contact-telegram:hover{border-color:var(--accent);background:rgba(76,125,255,0.08);}
   footer{padding:40px 0 60px;}
   .footer-inner{
     display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
@@ -514,7 +527,10 @@
       <div class="contact-panel">
         <h2>Have a product that needs a page?</h2>
         <p>Tell me what you're building and what the page needs to do. I'll reply with scope and timeline within a day.</p>
-        <a href="mailto:hello@yourdomain.com" class="contact-email">hello@yourdomain.com</a>
+        <div class="contact-links">
+          <a href="mailto:landbyship@proton.me" class="contact-email">landbyship@proton.me</a>
+          <a href="https://t.me/mr_mastercard" class="contact-telegram">Telegram @mr_mastercard</a>
+        </div>
       </div>
     </div>
   </section>
@@ -525,8 +541,8 @@
     <div class="footer-inner">
       <span>© 2026 ship() — landing pages for startups</span>
       <div class="footer-links">
-        <a href="mailto:hello@yourdomain.com">Email</a>
-        <a href="#">Twitter/X</a>
+        <a href="mailto:landbyship@proton.me">Email</a>
+        <a href="https://t.me/mr_mastercard">Telegram</a>
         <a href="#">LinkedIn</a>
       </div>
     </div>
